@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container" >
+    
+    <form action="{{url_for('home')}}" method="POST">
+        
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Fullname</span>
+            </div>
+            <input type="text" name="name" class="form-control" placeholder="Fullname" aria-label="Fullname" aria-describedby="basic-addon1">
+        </div>
+        
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Message</span>
+            </div>
+            <textarea name="message"  class="form-control" aria-label="Message"></textarea>
+        </div>
+        
+        <button  class="btn btn-primary">Submit</button>
+
+    </form>
+    {% for data in database%}
+    <div class="col p-4 d-flex flex-column position-static ">
+        <div class="mb-0  h4 font-weight-bold ">{{data[1]}}</div>
+        <div class="mb-1 text-muted font-italic">{{data[3]}}</div>
+        <div class="card-text mb-auto">{{ data[2]}} </div>
+    </div>
+    <hr>    
+
+    {% endfor %}
+</div>
+
+{% endblock content %}
