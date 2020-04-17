@@ -1,5 +1,5 @@
 # Open-Chat
-###Anonymous chatting website no need to give your personal data
+<b>Anonymous chatting website no need to give your personal data</b>
 <hr>
 
 <h2>Install Flask </h2>
