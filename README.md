@@ -1,12 +1,13 @@
 # Open-Chat
 ###Anonymous chatting website no need to give your personal data
+<hr>
 
-##Install Flask
--> pip install flask
+<h2>Install Flask </h2>
+<p>-> pip install flask</p>
 
-##Configure Database
--> python3 config_database.py
+<h2>Configure Database</h2>
+<p>-> python3 config_database.py</p>
 
-##Run flask server
--> python3 main.py
+<h2>Run flask server</h2>
+<p>-> python3 main.py</p>
 
